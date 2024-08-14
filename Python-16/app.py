@@ -5,9 +5,26 @@
 # account_holder და balance. აღწერეთ ფულის ჩარიცხვის და გამოტანის მეთოდები.
 #  შექმენით რამდენიმე ობიექტი და განახორციელეთ რამდენიმე ტრანზაქცია.
 
-efef
-eliffeffe
 
+class BankAccount:
+    account_number = "TB3444A422B00006"
+    account_holder = "John Doe"
+    balance = 576
+
+    def add_money(self, money):
+        self.balance += money
+        return self.balance
+
+    def get_money(self, money):
+        self.balance -= money
+        return self.balance
+
+
+add = BankAccount()
+print(add.add_money(200))
+
+get = BankAccount()
+print(get.get_money(500))
 
 # დავალება 2.
 
