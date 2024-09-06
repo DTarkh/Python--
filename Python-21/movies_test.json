@@ -22,8 +22,8 @@
         "genres": [
             "Drama",
             "Action",
-            "Crime",
-            "Thriller"
+            "Thriller",
+            "New crime"
         ]
     },
     {
@@ -46,7 +46,7 @@
         "vote_count": 6951,
         "genres": [
             "Drama",
-            "Crime"
+            "New crime"
         ]
     },
     {
@@ -71,7 +71,7 @@
         "genres": [
             "Drama",
             "Thriller",
-            "Crime"
+            "New crime"
         ]
     },
     {
@@ -94,9 +94,9 @@
         "vote_average": 8.164,
         "vote_count": 24156,
         "genres": [
-            "Crime",
             "Thriller",
-            "Drama"
+            "Drama",
+            "New crime"
         ]
     },
     {
@@ -118,8 +118,8 @@
         "vote_average": 8.141,
         "vote_count": 2037,
         "genres": [
-            "Crime",
-            "Drama"
+            "Drama",
+            "New crime"
         ]
     }
 ]
