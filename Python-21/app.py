@@ -4,8 +4,8 @@
 
 import json
 
-with open("movies.json", "r") as movies_jason_file:
-    movies_deserilized = json.load(movies_jason_file)
+with open("movies.json", "r") as movies_json_file:
+    movies_deserilized = json.load(movies_json_file)
 
 
 # ამავე ფაილში ჩაწერეთ ის
@@ -44,15 +44,13 @@ with open("movies_test.json", "w") as movies_jason_file:
     write_lines = movies_jason_file.write(dump_json)
 
 
-with open("movies.json", "a") as movies_jason_file:
-    write_lines = movies_jason_file.write(dump_json)
+# with open("movies.json", "a") as movies_jason_file:
+#     write_lines = movies_jason_file.write(dump_json)
 
 
 # ამავე ფაილში ჩაწერეთ ისეთი ფილმები,
 # რომელთა გამოშვების თარიღიც არის 2000-ზე ნაკლები,
 # ჟანრი არის Drama და ჟანრის სახელი ჩაუწერეთ Old_Drama.
-
-
 
 
 filtered_list_two = []
@@ -73,15 +71,14 @@ for movie in movies_deserilized:
 print(filtered_list_two)
 
 
-# dump_json_two = json.dumps(filtered_list_two, indent=4)
+dump_json_two = json.dumps(filtered_list_two, indent=4)
 
-# with open("movies_test_two.json", "w") as movies_json_file:
-#     write_lines = movies_json_file.write(dump_json_two)
+with open("movies_test_two.json", "w") as movies_json_file:
+    write_lines = movies_json_file.write(dump_json_two)
 
 
 # with open("movies.json", "a") as movies_json_file:
 #     write_lines = movies_json_file.write(dump_json_two)
-
 
 
 # იმ ფილმებს, რომელიც 2000 წელს არის გამოშვებული ჟანრში
@@ -94,11 +91,17 @@ for movie in movies_deserilized:
 
         split = result['release_date'].split('-')
         str_to_int = int(split[0])
-        # print(str_to_int)
+        print(str_to_int)
 
         if str_to_int == 2000:
             result['genres'].append('New century')
-            filtered_list_two.append(result)
+            filtered_list_three.append(result)
 
 
 print(filtered_list_three)
+
+
+dump_json_three = json.dumps(filtered_list_three, indent=4)
+
+with open("movies_test_three.json", "w") as movies_json_file:
+    write_lines = movies_json_file.write(dump_json_three)

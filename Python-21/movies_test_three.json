@@ -1,0 +1,78 @@
+[
+    {
+        "adult": false,
+        "backdrop_path": "/alQqTpmEkxSLgajfEYTsTH6nAKB.jpg",
+        "genre_ids": [
+            35,
+            18,
+            14
+        ],
+        "id": 40096,
+        "original_language": "pt",
+        "original_title": "O Auto da Compadecida",
+        "overview": "The lively Jo\u00e3o Grilo and the sly Chic\u00f3 are poor guys living in the hinterland who cheat a bunch of people in a small in Northeastern Brazil. When they die, they have to be judged by Christ, the Devil and the Virgin Mary before they are admitted to paradise.",
+        "popularity": 12.519,
+        "poster_path": "/imcOp1kJsCsAFCoOtY5OnPrFbAf.jpg",
+        "release_date": "2000-09-15",
+        "title": "A Dog's Will",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 1044,
+        "genres": [
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "New century"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/4I14RDX6gZPpXkHmbcqvAKpn3Dw.jpg",
+        "genre_ids": [
+            28,
+            18,
+            12
+        ],
+        "id": 98,
+        "original_language": "en",
+        "original_title": "Gladiator",
+        "overview": "In the year 180, the death of emperor Marcus Aurelius throws the Roman Empire into chaos.  Maximus is one of the Roman army's most capable and trusted generals and a key advisor to the emperor.  As Marcus' devious son Commodus ascends to the throne, Maximus is set to be executed.  He escapes, but is captured by slave traders.  Renamed Spaniard and forced to become a gladiator, Maximus must battle to the death with other men for the amusement of paying audiences.",
+        "popularity": 64.125,
+        "poster_path": "/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+        "release_date": "2000-05-04",
+        "title": "Gladiator",
+        "video": false,
+        "vote_average": 8.215,
+        "vote_count": 17574,
+        "genres": [
+            "Action",
+            "Drama",
+            "Adventure",
+            "New century"
+        ]
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/q2CtXYjp9IlnfBcPktNkBPsuAEO.jpg",
+        "genre_ids": [
+            9648,
+            53
+        ],
+        "id": 77,
+        "original_language": "en",
+        "original_title": "Memento",
+        "overview": "Leonard Shelby is tracking down the man who raped and murdered his wife. The difficulty of locating his wife's killer, however, is compounded by the fact that he suffers from a rare, untreatable form of short-term memory loss. Although he can recall details of life before his accident, Leonard cannot remember what happened fifteen minutes ago, where he's going, or why.",
+        "popularity": 39.626,
+        "poster_path": "/yuNs09hvpHVU1cBTCAk9zxsL2oW.jpg",
+        "release_date": "2000-10-11",
+        "title": "Memento",
+        "video": false,
+        "vote_average": 8.187,
+        "vote_count": 14169,
+        "genres": [
+            "Mystery",
+            "Thriller",
+            "New century"
+        ]
+    }
+]
