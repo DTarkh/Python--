@@ -105,3 +105,41 @@ dump_json_three = json.dumps(filtered_list_three, indent=4)
 
 with open("movies_test_three.json", "w") as movies_json_file:
     write_lines = movies_json_file.write(dump_json_three)
+
+
+name = input("Enter book name: ")
+author = input("Enter book author: ")
+description = input("Enter book description: ")
+year = input("Enter book year: ")
+
+
+class Book:
+    def __init__(self, name, author, description, year):
+        self.name = name
+        self.author = author
+        self.description = description
+        self.year = year
+
+    def to_dict(self):
+        {
+        "name": self.name,
+        "author": self.author,
+        "description": self.description,
+        "year": self.year
+        }
+
+
+
+
+book = Book(name, author, description, year)
+dictt = book.to_dict()
+print(dictt)
+
+for a in dictt:
+    print(a)
+
+# def custom_serialization(obj):
+#     return Book(obj['name'], obj['author'], obj['description'], obj['year'])
+
+
+# print(custom_serialization())
