@@ -24,12 +24,9 @@ student2 = Student("Mary", "Popins", 1986, 87)
 student3 = Student("Elizabeth", "Queen", 1996, 93)
 
 
-
 import json
 import pickle
 import dill
-
-
 
 
 def serialize_data(obj):
@@ -42,15 +39,15 @@ def serialize_data(obj):
         try:
             with open("file.pkl", "wb") as f:
                 pickle.dump(obj, f)
+            print("Successfully serialized with Pickle.")
         except pickle.PicklingError as error:
             print(f"Pickle serialization failed: {error}")
             try:
                 with open("file.dill", "wb") as f:
                     dill.dump(obj, f)
+                print("Successfully serialized with Dill.")
             except dill.PicklingError as error:
                 print(f"Dill serialization failed: {error}")
-                return "Unable to serialize the object with any method"
-
-
+                print("Unable to serialize the object with any method")
 
 print(serialize_data(student1))
