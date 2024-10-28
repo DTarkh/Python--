@@ -2,10 +2,10 @@ import psycopg2
 
 
 host = 'localhost'
-port = 5432
-database = 'Book\'s Store'
+port = 5433
+database = 'postgres'
 user = 'postgres'
-password = '9919'
+password = '99Youaremighty'
 
 
 connection = psycopg2.connect(host=host, port=port, database=database, user=user, password=password)
