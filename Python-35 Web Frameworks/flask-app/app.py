@@ -1,3 +1,4 @@
+
 from flask import Flask, request, render_template, redirect, url_for
 from models import db, Cars
 
@@ -38,29 +39,28 @@ def insert():
         instock = request.form['instock']
         price = request.form['price']
 
-
-        db.session.add(Cars(manufacturer, model, instock, price))
+        car = Cars(manufacturer, model, instock, price)
+        db.session.add(car)
         db.session.commit()
 
         return redirect(url_for('Index'))
 
 
-# @app.route('/edit/<int:id>/', methods=['GET', 'POST'])
-# def edit(id):
-#     # Fetch the car from the database by ID
-#     car = Cars.query.get(id)
-#
-#     if request.method == 'POST':
-#         # Update car attributes with form data
-#         car.manufacturer = request.form['manufacturer']
-#         car.model = request.form['model']
-#         car.instock = request.form['instock']
-#         car.price = request.form['price']
-#
-#         # Commit the changes to the database
-#         db.session.commit()
-#
-#         return redirect(url_for('Index'))
+
+@app.route('/update/<id>', methods=['GET', 'POST'])
+def update(id):
+    if request.method == 'POST':
+        car = Cars.query.get(id)
+
+        car.manufacturer = request.form['manufacturer']
+        car.model = request.form['model']
+        car.instock = request.form['instock']
+        car.price = request.form['price']
+
+        db.session.commit()
+
+        return redirect(url_for('Index'))
+
 
 
 @app.route('/delete/<id>/', methods=['GET', 'POST'])
